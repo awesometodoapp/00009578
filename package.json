@@ -1,18 +1,23 @@
 {
-  "name": "awesome to do app.",
+  "name": "00009578",
   "version": "1.0.0",
-  "description": "This web application was created to fulfill Web Technology module's requierements and does not represent an acutal company or service",
+  "description": "This web application was created to fulfill Web Technology module's requirements and does not represent an actual company or service",
   "main": "app.js",
+  "dependencies": {
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awesometodoapp/00009578.git"
+  },
   "author": "00009578",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.4",
-    "moment": "^2.18.1",
-    "pug": "^3.0.2"
-  }
+  "bugs": {
+    "url": "https://github.com/awesometodoapp/00009578/issues"
+  },
+  "homepage": "https://github.com/awesometodoapp/00009578#readme"
 }
