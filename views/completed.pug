@@ -1,0 +1,17 @@
+extends layout.pug
+
+block content
+  hr
+  .container
+    h2 List of tasks done in the to do list:
+    br
+    ol
+      each completedTask, i in todoTasks
+        if completedTask.done === true
+          li.completed
+            = completedTask.name
+            |  (
+            = completedTask.dateCompleted
+            |)
+            br
+            br

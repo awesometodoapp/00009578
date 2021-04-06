@@ -1,0 +1,32 @@
+extends layout.pug 
+
+block content
+  hr
+  .container
+    br
+    .search
+      button.doneAll.btn.btn-success Complete All
+      form(action="tasks", method="POST")
+        .input-group
+          input.addtasks.btn(name="task" placeholder="Write a task here" autofocus)
+          button.btn.btn-info Add
+    br
+    ul.todoTasks
+      if tasks.length === 0
+        p.notasks No tasks added yet....
+      each task, i in tasks
+        if task.done === false
+          li.task-item
+            button.done.btn.btn-success.pull-left(data-id=task.id) Complete
+            .info-task
+              span.taskname= i+1 + '.'
+              input.name(value=task.name)
+              button.remove.btn.btn-danger.pull-right(data-id=task.id) Remove
+              br
+              span.time.show-xs= task.dateCreated
+    br
+    br
+    br
+    hr
+    h3 * This web application was created to fulfill Web Technology module’s requirements and does not represent an actual company or service!
+    br
